@@ -1,0 +1,13 @@
+.card {
+    width: 28%;
+    background-color: #ececec;
+    padding: 2%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+img.marsImg {
+    width: 100%;
+    min-height: 315px;
+}

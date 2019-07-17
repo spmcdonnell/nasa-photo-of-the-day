@@ -12,13 +12,14 @@ function App() {
             .get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=1&api_key=${API}`)
             .then(res => {
                 setImages(res.data.photos);
+                console.log(res.data.photos);
             })
             .catch(err => console.log('There is an error:', err));
     }, []);
 
     return (
         <div className="App">
-            <p>Read through the instructions in the README.md file to build your NASA app! Have fun 🚀!</p>
+            <h1>NASA Curiosity Rover Images</h1>
             <CardContainer images={images} />
         </div>
     );
